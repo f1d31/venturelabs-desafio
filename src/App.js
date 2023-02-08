@@ -28,10 +28,25 @@ function App() {
 
   const onTextChange = (e) => {
     const { name, value } = e.target;
-
+    console.log(name, value);
+    if (name === "phoneNumber") {
+      if (value === "") {
+        setFormData({ ...formData, [name]: value });
+        return;
+      }
+      const pattern = /^\d+$/;
+      if (pattern.test(value)) {
+        setFormData({ ...formData, [name]: value });
+        return;
+      }
+      return;
+    }
     if (name === "firstName" || name === "lastName") {
       const pattern = /^[a-zA-Z]+$/;
-
+      if (value === "") {
+        setFormData({ ...formData, [name]: value });
+        return;
+      }
       if (pattern.test(value)) {
         setFormData({ ...formData, [name]: value });
         return;
@@ -41,6 +56,10 @@ function App() {
     if (name === "CEP") {
       const pattern = /^\d+$/;
       if (value.length > 8) {
+        return;
+      }
+      if (value === "") {
+        setFormData({ ...formData, [name]: value });
         return;
       }
       if (pattern.test(value)) {
@@ -59,6 +78,10 @@ function App() {
     }
     if (name === "CPF") {
       if (value.length > 11) {
+        return;
+      }
+      if (value === "") {
+        setFormData({ ...formData, [name]: value });
         return;
       }
       const pattern = /^\d+$/;
