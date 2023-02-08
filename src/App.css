@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+.nav-menu {
+  background-color: gray;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 200000;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+  z-index: 200000;
+}
