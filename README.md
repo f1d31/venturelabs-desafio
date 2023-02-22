@@ -18,7 +18,7 @@ yarn start
 ## Requisitos:
 
 1. A aplicação deve conter um menu lateral com dois itens ('Novo Cliente' e ' Lista de Clientes').
-2. A opção 'Novo Cliente' deve iniciar o formulário no passo 1
+2. A opção 'Novo Cliente' deve iniciar o formulário no passo 1.
 3. Passo 1 deve conter os campos: Nome, Sobrenome, E-mail, Telefone.
 4. Passo 2 deve conter os campos: CEP, Endereço 1, Endereço 2.
 5. Passo 3 deve conter os campos: Data de Nascimento, CPF, Renda Mensal.
