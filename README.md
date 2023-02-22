@@ -4,10 +4,12 @@
 https://63e40a24721e052234e0f826--whimsical-treacle-7da1d6.netlify.app/
 
 ## Instruções:
+```
 git clone https://github.com/f1d31/venturelabs-desafio.git
 cd venturelabs-desafio
 yarn
 yarn start
+```
 
 ## Objetivo:
 
