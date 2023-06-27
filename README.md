@@ -1,7 +1,7 @@
 # VentureLabs - Prova/Teste Front-end (React)
 
 ## Netlify:
-https://63e40a24721e052234e0f826--whimsical-treacle-7da1d6.netlify.app/
+https://whimsical-treacle-7da1d6.netlify.app/
 
 ## Instruções:
 ```
